@@ -29,14 +29,14 @@ async function getValue() {
 getValue();
 
 async function set() {
-  let tx = await readAndWriteContract.set(9);
-  console.log(tx)
+  let a = await readAndWriteContract.set(9);
+  console.log(a)
 }
 set();
 
 //event listener
 
-readOnlyContract.on('Data', (x) => {
-  console.log(x.toNumber())
+readOnlyContract.on('Data', (b) => {
+  console.log(b.toNumber())
 })
 
